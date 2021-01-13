@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-a-row',
+  selector: 'a-row',
   templateUrl: './a-row.component.html',
   styleUrls: ['./a-row.component.css']
 })
