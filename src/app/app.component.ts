@@ -28,8 +28,9 @@ export class AppComponent {
       avg: 90
     },
   ];
-  text:string;
   // getAlert(name) {
   //   alert(name);
   // };
+  text: string;
+  
 }

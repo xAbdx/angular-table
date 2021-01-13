@@ -1,0 +1,5 @@
+<h1>test Parent</h1>
+<ul>
+    <li *ngFor="let item of items">{{item}}</li>
+</ul>
+<child (newItemEvent)="addItem($event)"></child>
