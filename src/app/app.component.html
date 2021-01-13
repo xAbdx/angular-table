@@ -23,3 +23,9 @@
   <a-table></a-table>
   <a-row></a-row>
 </div>
+<br><br>
+
+
+  <input id="textbox-icon" [(ngModel)]="text"type="text" /><br>
+  <label >{{text}}</label><br>
+  <button type="submit" class="btn btn-primary" [disabled]="text==''" (click)="text=''">Reset</button>
