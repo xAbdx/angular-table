@@ -10,6 +10,7 @@ import { ChildComponent } from './parent/child/child.component';
 import { LoginComponent } from './login/login.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HighlightDirective } from './highlight.directive';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { AppRoutingModule } from './app-routing.module';
     ChildComponent,
     LoginComponent,
     ProfilePageComponent,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,

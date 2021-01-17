@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+
   students = [
     {
       name: "Abd",
@@ -28,9 +30,25 @@ export class AppComponent {
       avg: 90
     },
   ];
-  // getAlert(name) {
-  //   alert(name);
-  // };
+
+  getAlert() {
+    alert("Hi");
+  };
+
   text: string;
-  
+  //////////////////////////////////////////////////////////////////////////////
+  toggleTag() {
+    this.items.push("dsf")
+    this.showMe = !this.showMe
+  }
+  showMe: boolean = true
+  items = [];
+  data: string;
+  today: Number = Date.now();
+
+  currentStyles = {
+    'color': 'white'
+  };
+
+
 }
