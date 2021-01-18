@@ -1,54 +1,28 @@
 import { DatePipe } from '@angular/common';
 import { Component } from '@angular/core';
+import { ToggleService } from './toggle.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
+  constructor(public toggleService: ToggleService) {
 
-  students = [
-    {
-      name: "Abd",
-      age: 19,
-      avg: 100
-    },
-    {
-      name: "John",
-      age: 20,
-      avg: 70
-    },
-    {
-      name: "Alex",
-      age: 22,
-      avg: 60
-    },
-    {
-      name: "Moh",
-      age: 18,
-      avg: 90
-    },
-  ];
+  }
 
-  getAlert() {
-    alert("Hi");
-  };
-
-  text: string;
-  //////////////////////////////////////////////////////////////////////////////
+  showMe: boolean = true
   toggleTag() {
-    this.items.push("dsf")
+    this.toggleService.add();
     this.showMe = !this.showMe
   }
-  showMe: boolean = true
-  items = [];
+  items = this.toggleService.items;
   data: string;
-  today: Number = Date.now();
 
   currentStyles = {
     'color': 'white'
   };
+
 
 
 }

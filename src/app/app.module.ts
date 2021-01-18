@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HighlightDirective } from './highlight.directive';
+import { ScrollDirectiveDirective } from './scroll-directive.directive';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { HighlightDirective } from './highlight.directive';
     LoginComponent,
     ProfilePageComponent,
     HighlightDirective,
+    ScrollDirectiveDirective,
   ],
   imports: [
     BrowserModule,

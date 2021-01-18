@@ -39,12 +39,32 @@
 
 
 <!-- Ahmad ////////////////////////////////////////////////////////////////////////////-->
-<h1>Toggle (hide/show)</h1>
+<!-- <h1>Toggle (hide/show)</h1>
 
 <button (click)="toggleTag()">Show/Hide</button>
 <h2 appHighlight *ngIf="showMe">toggle me</h2>
 
 <ul>
-  <li *ngFor="let item of items; let i = index" [ngClass]="i > 4 ? 'colored' : ''" [ngStyle]="i > 4 ? currentStyles : ''">{{i + 1}}
+  <li *ngFor="let item of items; let i = index" [ngClass]="i > 4 ? 'colored' : ''"
+    [ngStyle]="i > 4 ? currentStyles : ''">{{i + 1}}
     on {{today | date:'full'}}</li>
-</ul>
+</ul> -->
+
+<h1>Show Table</h1>
+
+<button (click)="toggleTag()">Show/Hide</button>
+
+<div appScrollDirective class="container">
+  <table class="table">
+    <tr>
+      <th>Number</th>
+      <th>Time</th>
+    </tr>
+    <tr *ngFor="let item of items; let i = index" [ngClass]="i > 4 ? 'colored' : ''"
+      [ngStyle]="i > 4 ? currentStyles : ''">
+      <td>{{i + 1}}</td>
+      <td>{{item | date:'full'}}</td>
+    </tr>
+
+  </table>
+  <div>

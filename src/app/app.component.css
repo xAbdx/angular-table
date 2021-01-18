@@ -3,3 +3,33 @@
     font-size: 20px;
     /* color: #fff;  */
 }
+
+.container {
+    width: 400px;
+    border: 1px solid #ddd;
+    /* overflow: hidden; */
+    overflow-x: hidden; 
+    overflow-y: scroll; 
+    height: 400px;
+    display: block;
+}
+
+.tStlye {
+    border-collapse: collapse;
+    /* width: 400px;
+    border: 1px solid #ddd;
+    overflow-x: hidden; 
+    overflow-y: scroll; 
+    height: 400px;
+    display: block; */
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+    color: #000;
+    background-color: rgb(235, 235, 235);
+}
